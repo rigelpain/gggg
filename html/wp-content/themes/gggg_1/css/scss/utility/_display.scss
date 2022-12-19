@@ -1,0 +1,29 @@
+.u-inline {
+  display: inline;
+}
+
+.u-block {
+  display: block;
+}
+
+.u-hide {
+  display: none !important;
+}
+
+.u-hide-sp {
+  @include sp {
+    display: none !important;
+  }
+}
+
+.u-hide-pc {
+  @include pc {
+    display: none !important;
+  }
+}
+
+.u-hide-tabpc {
+  @include tabpc {
+    display: none !important;
+  }
+}

@@ -1,0 +1,72 @@
+html {
+  overflow: auto;
+  height: 100%;
+  -ms-text-size-adjust: 100%;
+  font-size: 62.5%; /* 1.4rem = 14px*/
+  box-sizing: border-box;
+    /*スクロールバー非表示（IE・Edge）*/
+    -ms-overflow-style: none;
+    /*スクロールバー非表示（Firefox）*/
+    scrollbar-width: none;
+  &.is-fixed {
+    overflow-y: hidden;
+    height: 100%;
+    touch-action: none;
+  }
+  &::-webkit-scrollbar{
+    display:none;
+  }
+}
+
+body {
+  font-family: $font-rounded-1c;
+  font-display: swap;
+  color: $font_color01;
+  font-size: 1.6rem;
+  line-height: 1.88;
+  @include tabpc {
+    min-width: 1131px;
+  }
+}
+
+ul,
+ol {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+p {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: $link_color01;
+  text-decoration: none;
+  transition: all 0.6s ease 0s;
+}
+
+a:hover {
+  color: $link_color01;
+  text-decoration: none;
+  transition: all 0.6s ease 0s;
+}
+
+a img {
+  opacity: 1;
+  transition: opacity 0.6s ease 0s;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+a img:hover {
+  opacity: 0.85;
+  transition: opacity 0.6s ease 0s;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}

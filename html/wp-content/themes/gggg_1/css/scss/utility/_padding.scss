@@ -1,0 +1,29 @@
+@for $value from 0 through 40 {
+  .u-p#{$value} {
+    padding: $value * 5px !important;
+  }
+}
+
+@for $value from 0 through 40 {
+  .u-pt#{$value} {
+    padding-top: $value * 5px !important;
+  }
+}
+
+@for $value from 0 through 40 {
+  .u-pb#{$value} {
+    padding-bottom: $value * 5px !important;
+  }
+}
+
+@for $value from 0 through 40 {
+  .u-pr#{$value} {
+    padding-right: $value * 5px !important;
+  }
+}
+
+@for $value from 0 through 40 {
+  .u-pl#{$value} {
+    padding-left: $value * 5px !important;
+  }
+}

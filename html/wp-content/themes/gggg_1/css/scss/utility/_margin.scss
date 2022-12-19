@@ -1,0 +1,71 @@
+@for $value from 0 through 40 {
+  .u-m#{$value} {
+    margin: $value * 5px !important;
+  }
+}
+
+@for $value from 0 through 40 {
+  .u-mt#{$value} {
+    margin-top: $value * 5px !important;
+  }
+}
+
+@for $value from 0 through 40 {
+  .u-mb#{$value} {
+    margin-bottom: $value * 5px !important;
+  }
+}
+
+@for $value from 0 through 40 {
+  .u-mr#{$value} {
+    margin-right: $value * 5px !important;
+  }
+}
+
+@for $value from 0 through 40 {
+  .u-ml#{$value} {
+    margin-left: $value * 5px !important;
+  }
+}
+
+
+.u-m0 {
+  margin: 0 !important;
+}
+
+.u-mt0 {
+  margin-top: 0 !important;
+}
+
+.u-mb0 {
+  margin-bottom: 0 !important;
+}
+
+.u-ml0 {
+  margin-left: 0 !important;
+}
+
+.u-mr0 {
+  margin-right: 0 !important;
+}
+
+.u-p0 {
+  padding: 0 !important;
+}
+
+.u-pt0 {
+  padding-top: 0 !important;
+}
+
+.u-pb0 {
+  padding-bottom: 0 !important;
+}
+
+.u-pl0 {
+  padding-left: 0 !important;
+}
+
+.u-pr0 {
+  padding-right: 0 !important;
+}
+

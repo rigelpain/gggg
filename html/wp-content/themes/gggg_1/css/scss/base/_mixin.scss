@@ -1,0 +1,59 @@
+// =========================================================
+// MIXIN
+// =========================================================
+
+// ブレークポイント設定のmixin
+// sp, tab, pcではcssの上書きはなるべくしないようにする（それぞれのmixinで中身を書き分ける）
+// 例外としてwideのpc幅の時は最後に設定し、上書きをする
+@mixin sp {
+  @media screen and (max-width: $sp + px) {
+    @content;
+  }
+}
+@mixin sptab {
+  @media screen and (max-width: $tab + px) {
+    @content;
+  }
+}
+@mixin tab {
+  @media screen and (min-width: ($sp + 1) + px) and (max-width: $tab + px) {
+    @content;
+  }
+}
+@mixin tabpc {
+  @media print, screen and (min-width: ($sp + 1) + px) {
+    @content;
+  }
+}
+@mixin tabwide {
+  @media screen and (min-width: ($sp + 1) + px) and (max-width: $pc + px) {
+    @content;
+  }
+}
+@mixin pc {
+  @media print, screen and (min-width: ($tab + 1) + px) {
+    @content;
+  }
+}
+@mixin pc2 {
+  @media screen and (min-width: ($tab + 1) + px) and (max-width: $pc + px) {
+    @content;
+  }
+}
+@mixin wide {
+  @media screen and (min-width: ($pc + 1) + px) {
+    @content;
+  }
+}
+
+// inner以下
+@mixin inner {
+  @media screen and (min-width: ($sp + 1) + px) and (max-width: ($inner + px)) {
+    @content;
+  }
+}
+
+//spフォントのvwに対応したmixin
+@mixin fzvw($fz, $vw: $compWidth) {
+  font-size: (($fz / $vw) * 100) + vw;
+}

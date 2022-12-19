@@ -1,0 +1,59 @@
+@charset "utf-8";
+
+// Base Color
+$thm_color: #189D92; //theme color
+$thm_color02: #6acc85;
+
+// Bg Color
+$bg_color01: #838383; //黄色
+$bg_color02: #f5f8f0; //ブルー色
+
+$white: #fff; //ホワイト
+$black: #000; //ブラック
+$is_transparent: transparent; //透明
+
+// Border Color
+$border_color01: #ebebeb;
+
+// Link Color
+$link_color01: #000000; //Text link color01
+
+// Font Color
+$font_color01: #171717; //Text  color01
+
+$font_color02: #c4c2c2; //Text  color02薄い文字（仮）
+
+// table color
+$bg_color_table: #94c158; //テーブル偶数行背景色
+
+// Others
+$cl_orange01: #ffe0af;
+$cl_orange02: #fff2d5; //背景ベタ01
+$cl_orange03: #ffc627; //アクセント
+$cl_orange04: #FFEB00;
+$cl_green01: #daeac6;
+$cl_green02: #f5f8f0; //背景ベタ02
+$cl_green03: #94c158; //背景ベタ02
+$cl_green04: #23a045; //背景ベタ02
+$cl_blue01: #c5e4f0;
+$cl_mosgreen01: #96a87e;
+
+//breakpoint
+$sp: 768;
+$tab: 768;
+$inner: 1024;
+$pc: 1200;
+
+$font-noto: "Noto Sans JP", sans-serif;
+// $font-plus-1p: "M PLUS 1p", sans-serif;
+$font-rounded-1c: "M PLUS Rounded 1c", sans-serif;
+
+/*
+font-family: 'M PLUS 1p', sans-serif;
+font-family: 'M PLUS Rounded 1c', sans-serif;
+font-family: 'Noto Sans JP', sans-serif;*/
+
+// pagenation
+$page_disable: #f5f8f0;
+// /problem stepの左上丸角
+$step-radius: 20px;

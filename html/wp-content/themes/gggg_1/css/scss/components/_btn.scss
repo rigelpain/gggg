@@ -1,0 +1,147 @@
+.btn {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  max-width: 236px;
+  text-align: center;
+  padding: 15px 20px;
+  border-radius: 30px;
+  font-weight: bold;
+  font-family: $font-rounded-1c;
+  font-size: 1.8rem;
+  opacity: 1;
+  transition: all 0.2s;
+  &.is-green {
+    background-color: $thm_color;
+    color: #fff;
+    padding: 15px 55px 15px 25px;
+    max-width: 260px;
+    width: 100%;
+    &:hover {
+      color: #fff;
+      background-color: #7bcb82;
+      transition: all 0.2s;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      right: 15px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background-color: #fff;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      right: 17px;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: 14px;
+      height: 10px;
+      background: url(../images/common/icn_nav_arrow_img01.svg) 0 center/14px
+        10px no-repeat;
+    }
+    &.large {
+      @include sp {
+        margin-top: 30px;
+        max-width: 260px;
+      }
+      @include tabpc {
+        max-width: 380px;
+      }
+    }
+    &.is-small {
+      padding: 10px 55px 10px 25px;
+      width: 200px;
+    }
+  }
+  .btn-illust {
+    &:before {
+      content: "";
+      position: absolute;
+      top: -105px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 134px;
+      height: 105px;
+      background-image: url(../images/our-business/img_hukidashi_illust.png);
+      background-size: contain;
+    }
+  }
+}
+
+.cv-btn {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  font-weight: bold;
+  font-family: $font-rounded-1c;
+  opacity: 1;
+  transition: all 0.6s;
+  border: 3px solid #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(151, 183, 38, 0.5);
+  background-color: $thm_color;
+
+  @include sp {
+    padding-left: 10px;
+  }
+  @include tabpc {
+    padding-left: 10px;
+  }
+
+  &:hover {
+    .cv-btn__img {
+      transform: scale(1.1);
+      transform-origin: left bottom;
+    }
+    .cv-btn__detalis-ttl {
+      padding-right: 47px;
+    }
+  }
+
+  &__row {
+    display: flex;
+    align-items: center;
+  }
+
+  &__img {
+    position: relative;
+    top: -10px;
+    transition: all 0.6s;
+  }
+
+  &__detalis {
+    padding-left: 10px;
+    line-height: 1.4;
+  }
+
+  &__detalis-txt {
+    display: block;
+    color: #fff;
+    @include sp {
+      font-size: 1.3rem;
+    }
+    @include tabpc {
+      font-size: 1.4rem;
+    }
+  }
+
+  &__detalis-ttl {
+    padding-right: 42px;
+    color: #ffeb00;
+    background: url(../images/common/icn_main_arrow_img12.svg) no-repeat;
+    background-position: right 50%;
+    background-size: 28px auto;
+    transition: all 0.6s;
+    @include sp {
+      font-size: 2.4rem;
+    }
+    @include tabpc {
+      font-size: 2.8rem;
+    }
+  }
+}

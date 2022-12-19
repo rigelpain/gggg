@@ -1,0 +1,39 @@
+.p {
+  position: relative;
+  &__ttl-h2 {
+    position: relative;
+    padding-bottom: 20px;
+    font-size: 1.8rem;
+    color: $thm_color;
+    font-family: $font-noto;
+    font-weight: bold;
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 39px;
+      height: 1px;
+      background-color: $thm_color;
+    }
+    @include sp {
+    }
+
+    @include tabpc {
+    }
+  }
+
+  &__ttl-h3 {
+    line-height: 1.4;
+    font-weight: bold;
+    @include sp {
+      margin-top: 20px;
+      font-size: 2.1rem;
+    }
+
+    @include tabpc {
+      margin-top: 30px;
+      font-size: 2.6rem;
+    }
+  }
+}
